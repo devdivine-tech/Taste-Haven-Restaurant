@@ -537,8 +537,14 @@
   .scroll-m-16 {
     scroll-margin: calc(var(--spacing) * 16);
   }
+  .scroll-mt-5 {
+    scroll-margin-top: calc(var(--spacing) * 5);
+  }
   .scroll-mt-16 {
     scroll-margin-top: calc(var(--spacing) * 16);
+  }
+  .scroll-mt-52 {
+    scroll-margin-top: calc(var(--spacing) * 52);
   }
   .flex-col {
     flex-direction: column;
