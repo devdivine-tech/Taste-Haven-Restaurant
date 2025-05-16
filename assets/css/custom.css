@@ -188,6 +188,15 @@ input:-webkit-autofill {
 
 
 /* FOOD MENU STYLES FROM TOP */
+.nav-links {
+  scrollbar-color: #f59e0b #fbbf24;
+}
+
+.active {
+  background-color: #f59e0b;
+  color: #064e3b;
+}
+
 .menu-section {
   display: none;
   flex-wrap: wrap;
