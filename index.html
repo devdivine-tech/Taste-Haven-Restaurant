@@ -345,11 +345,11 @@
       <article class="w-full mt-12 p-8 xl:mt-0 sm:w-[550px] flex flex-col justify-start">
         <h3 class="font-semibold text-2xl mb-4">Book A Table</h3>
         <form action="" method="get">
-          <input type="text" name="name" id="name" placeholder="Enter Your Name" class="bg-gradient-to-br from-[rgba(245,158,11,0.2)] to-[rgba(255,255,255,0.05)] border border-[rgba(245,158,11,0.3)] shadow-[inset_0_0_20px_rgba(245,158,11,0.4),_0_8px_40px_rgba(0,0,0,0.6),_0_0_15px_rgba(245,158,11,0.5)] backdrop-blur-[10px] transition-shadow duration-50ease-linearfont-semibold block w-full mb-3 rounded-lg h-10 p-4 hover:outline-none focus:outline-none hover:bg-emerald-950 focus:bg-emerald-950"/>
-          <input type="email" name="email" id="email" placeholder="Enter Your Email" class="bg-gradient-to-br from-[rgba(245,158,11,0.2)] to-[rgba(255,255,255,0.05)] border border-[rgba(245,158,11,0.3)] shadow-[inset_0_0_20px_rgba(245,158,11,0.4),_0_8px_40px_rgba(0,0,0,0.6),_0_0_15px_rgba(245,158,11,0.5)] backdrop-blur-[10px] transition-shadow duration-50ease-linearfont-semibold block w-full mb-3 rounded-lg h-10 p-4 hover:outline-none focus:outline-none hover:bg-emerald-950 focus:bg-emerald-950 autofill:bg-emerald-950"/>
-          <input type="datetime-local" name="date and time" id="date-and-time" class="bg-gradient-to-br from-[rgba(245,158,11,0.2)] to-[rgba(255,255,255,0.05)] border border-[rgba(245,158,11,0.3)] shadow-[inset_0_0_20px_rgba(245,158,11,0.4),_0_8px_40px_rgba(0,0,0,0.6),_0_0_15px_rgba(245,158,11,0.5)] backdrop-blur-[10px] transition-shadow duration-50ease-linearfont-semibold block w-full mb-3 rounded-lg h-10 p-4 hover:outline-none focus:outline-none hover:bg-emerald-950 focus:bg-emerald-950 placeholder:text-amber-500 my-date-input"/>
-          <input type="number" name="number-of-persons" id="number-of-persons" placeholder="Number Of Guest(s)" class="bg-gradient-to-br from-[rgba(245,158,11,0.2)] to-[rgba(255,255,255,0.05)] border border-[rgba(245,158,11,0.3)] shadow-[inset_0_0_20px_rgba(245,158,11,0.4),_0_8px_40px_rgba(0,0,0,0.6),_0_0_15px_rgba(245,158,11,0.5)] backdrop-blur-[10px] transition-shadow duration-50ease-linearfont-semibold block w-full mb-3 rounded-lg h-10 p-4 hover:outline-none focus:outline-none hover:bg-emerald-950 focus:bg-emerald-950"/>
-          <textarea name="message" id="message" placeholder="Additional Information For Perfect Reserve" class="w-full h-20 bg-gradient-to-br from-[rgba(245,158,11,0.2)] to-[rgba(255,255,255,0.05)] border border-[rgba(245,158,11,0.3)] shadow-[inset_0_0_20px_rgba(245,158,11,0.4),_0_8px_40px_rgba(0,0,0,0.6),_0_0_15px_rgba(245,158,11,0.5)] backdrop-blur-[10px] transition-shadow duration-50ease-linearfont-semibold hover:outline-none focus:outline-none rounded-lg p-2 px-4"></textarea>
+          <input type="text" name="name" id="name" placeholder="Enter Your Name" class="shadow-xs shadow-amber-500 border-[rgba(245,158,11,0.3)] transition-shadow duration-500 ease-linear font-semibold block w-full mb-5 rounded-lg h-10 p-4 hover:outline-none focus:outline-none focus:border-2 hover:border-2"/>
+          <input type="email" name="email" id="email" placeholder="Enter Your Email" class="shadow-xs shadow-amber-500 border-[rgba(245,158,11,0.3)] transition-shadow duration-500 ease-linear font-semibold block w-full mb-5 rounded-lg h-10 p-4 hover:outline-none focus:outline-none focus:border-2 hover:border-2"/>
+          <input type="datetime-local" name="date and time" id="date-and-time" class="shadow-xs shadow-amber-500 border-[rgba(245,158,11,0.3)] transition-shadow duration-500 ease-linear font-semibold block w-full mb-5 rounded-lg h-10 p-4 hover:outline-none focus:outline-none focus:border-2 hover:border-2"/>
+          <input type="number" name="number-of-persons" id="number-of-persons" placeholder="Number Of Guest(s)" class="shadow-xs shadow-amber-500 border-[rgba(245,158,11,0.3)] transition-shadow duration-500 ease-linear font-semibold block w-full mb-5 rounded-lg h-10 p-4 hover:outline-none focus:outline-none focus:border-2 hover:border-2"/>
+          <textarea name="message" id="message" placeholder="Additional Information For Perfect Reserve" class=" h-20 shadow-xs shadow-amber-500 border-[rgba(245,158,11,0.3)] transition-shadow duration-500 ease-linear font-semibold block w-full mb-5 hover:outline-none focus:outline-none focus:border-2 hover:border-2 rounded-lg p-2 px-4"></textarea>
           <button type="submit" class="bg-emerald-950 text-amber-500 px-4 py-2 mt-2 rounded-lg font-bold hover:bg-emerald-900 transition-all duration-300 block text-center w-full book-btn">Book Now</button>
         </form>
       </article>
@@ -358,35 +358,6 @@
       <p class="font-medium text-center">&copy; <span id="date"></span> Taste Haven Restaurant. All Rights Reserved.</p>
     </section>
   </footer>
-
-  <!-- AI Assistant Widget -->
-  <div id="ai-assistant-widget" class="fixed bottom-6 right-6 z-50">
-    <!-- Button to open chat -->
-    <button id="open-ai-chat"
-      class="flex items-center gap-2 bg-emerald-950 text-amber-500 px-4 py-2 rounded-full shadow-lg hover:bg-emerald-900 transition-all">
-      <i class="fa-solid fa-robot"></i>
-      <span>Chat with AI</span>
-    </button>
-    <!-- Chat window (hidden by default) -->
-    <div id="ai-chat-window" class="hidden flex flex-col w-80 max-w-[90vw] h-[420px] bg-emerald-950 text-amber-500 rounded-xl shadow-2xl mt-4">
-      <div class="flex items-center justify-between px-4 py-2 border-b border-amber-500">
-        <span class="font-bold text-lg"><i class="fa-solid fa-robot mr-2"></i>Haven Bot</span>
-        <div>
-          <button id="clear-chat" class="text-amber-500 hover:text-amber-400 text-sm mr-4">Clear Chat</button>
-          <button id="close-ai-chat" class="text-amber-500 hover:text-amber-400 text-xl">&times;</button>
-        </div>
-      </div>
-      <div id="ai-chat-messages" class="flex-1 overflow-y-auto px-4 py-2 space-y-2 text-sm"></div>
-      <form id="ai-chat-form" class="flex items-center border-t border-amber-500 p-2 gap-2">
-        <input id="ai-chat-input" type="text" autocomplete="off" placeholder="Ask me anything..."
-          class="flex-1 rounded-lg px-3 py-2 bg-emerald-900 text-amber-500 placeholder:text-amber-400 outline-none border border-amber-400 focus:border-amber-500" />
-        <button type="submit"
-          class="bg-amber-500 text-emerald-950 px-3 py-2 rounded-lg font-bold hover:bg-amber-400 transition-all">
-          Send
-        </button>
-      </form>
-    </div>
-  </div>
   <script src="assets/js/nav.js" type="text/javascript"></script>
   <script src="assets/js/menu.js" type="text/javascript"></script>
   <script src="assets/js/main-menu.js" type="text/javascript"></script>
